@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage>
     _resetTimer?.cancel();
 
     _resetTimer =
-        Timer.periodic(const Duration(milliseconds: 30000), (Timer timer) {
+        Timer.periodic(const Duration(seconds: 30), (Timer timer) {
       if (!_toggle) {
         _animationController.forward();
       } else {
